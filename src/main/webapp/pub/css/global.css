@@ -1,0 +1,311 @@
+/* General Styles for Comic Theme */
+body {
+    font-family: 'Bangers', 'Comic Sans MS', cursive;
+    background-image: url('../img/logo/bgs.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+.page-title {
+    font-size: 4rem;
+    text-align: center;
+    color: #ff3e00;
+    text-shadow: 3px 3px 0 #fff, 6px 6px 0 #000;
+    margin-bottom: 30px;
+    transform: rotate(-2deg);
+}
+
+.message {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.raleway-normal, .raleway-bold {
+    font-family: 'Bangers', 'Comic Sans MS', cursive;
+}
+
+.raleway-bold {
+    font-weight: 700;
+    color: #ff3e00;
+    text-shadow: 2px 2px #fff, 3px 3px #000;
+}
+
+/* Comic-theme Containers */
+.comic-theme {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #000;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.custom-section, .custom-section-darker {
+    background-color: rgba(255, 255, 255, 0.9); /* Increased opacity for better visibility */
+    color: #000; /* Ensure text color is black for contrast */
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 250px; /* Align content with the side navigation */
+}
+
+.custom-section-darker {
+    background-color: rgba(240, 176, 124, 0.8);
+}
+
+/* Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Flip Card Styling */
+.flip-card {
+    perspective: 1000px;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 0 3px #fff, 0 0 0 6px #000;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+.flip-card-front {
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.flip-card-back {
+    background-color: #f0b07c;
+    color: #000;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #ff3e00;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
+}
+
+/* Card Content */
+.card-title {
+    font-size: 2rem;
+    color: #ff3e00;
+    text-shadow: 2px 2px 0 #fff, 4px 4px 0 #000;
+    margin-bottom: 15px;
+    transform: rotate(-3deg);
+}
+
+.card-subtitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #ff3e00;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.2s, background-color 0.2s;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.btn:hover {
+    background-color: #d32f00;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.btn.comic-btn {
+    background-color: #fca311;
+}
+
+.btn.comic-btn.danger {
+    background-color: #e63946;
+}
+
+.btn.comic-create-btn {
+    background-color: #00aaff;
+    font-size: 1.4rem;
+    padding: 15px 25px;
+    text-shadow: 2px 2px #000;
+}
+
+.btn.comic-create-btn:hover {
+    background-color: #0077cc;
+}
+
+/* Comic-style Shadows and Effects */
+.comic-shadow {
+    box-shadow: 5px 5px 0 #000;
+    transition: box-shadow 0.2s ease;
+}
+
+.comic-shadow:hover {
+    box-shadow: 8px 8px 0 #000;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: rgba(255, 62, 0, 0.8);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
+    margin-bottom: 20px;
+}
+
+.navbar-custom .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px #000;
+}
+
+/* Form Styling */
+.form-container, .form-container-two {
+    background-color: #f0b07c;
+    border: 3px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
+    padding: 30px;
+}
+
+/* Table Styling */
+.table {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 15px;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #ff3e00;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 3rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flip-card {
+        width: 100%;
+    }
+
+    .side-nav {
+        width: 0;
+        overflow-x: hidden;
+    }
+
+    .main-content, .custom-section, .custom-section-darker {
+        margin-left: 0;
+    }
+
+    .side-nav.open {
+        width: 250px;
+    }
+}
+
+/* Side Navigation Styling */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.side-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    background-color: #ff3e00;
+}
+
+/* Main Content Layout */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
