@@ -1,5 +1,16 @@
 # 🎴 Trading Card Collection 🎴
 
+![Screen Shot 2024-09-25 at 9 11 58 PM](https://github.com/user-attachments/assets/0ccf300b-63a5-481f-a3ec-8c1a04853869)
+
+### Front of a Card
+![Screen Shot 2024-09-25 at 9 12 36 PM](https://github.com/user-attachments/assets/fca6655b-c626-47b1-bcbf-c2682a5f90df)
+
+
+### Back of a Card
+![Screen Shot 2024-09-25 at 9 17 19 PM](https://github.com/user-attachments/assets/6ffd3a68-3a20-4853-8e34-3bf62f8d01dd)
+
+
+
 This project is a web-based platform for managing trading card collections. It includes features like user authentication, card searching, and administrative controls for card management.
 
 ## ✨ Features
